@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 $:.unshift(File.join(File.dirname(__FILE__), *%w[.. lib]))
-require 'labici'
+require 'test_drupal'
 
 TASKS = {
-  'migrate-simple-products'       => LaBici::SimpleProductMigrator,
-  'migrate-configurable-products' => LaBici::ConfigurableProductMigrator,
-  'migrate-customers'             => LaBici::CustomerMigrator,
-  'customer-report'               => LaBici::CustomerReport
+  'migrate-simple-products'       => test_drupal::SimpleProductMigrator,
+  'migrate-configurable-products' => test_drupal::ConfigurableProductMigrator,
+  'migrate-customers'             => test_drupal::CustomerMigrator,
+  'customer-report'               => test_drupal::CustomerReport
 }.freeze
 
 if (task = TASKS[ARGV[0]])
