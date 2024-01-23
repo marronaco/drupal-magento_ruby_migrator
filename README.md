@@ -19,7 +19,7 @@ The overall workflow here is:
 
 For us this was the right mix of automation and manual effort, that might be different for you.
 
-## Staging the Magento data :hammer:
+## Como staggear (en ingles xd)
 
 1. Dump the Magento MySQL database (PHPMyAdmin w/ simple default options works) and place the dumped SQL file into `data/megento_db` Docker will pick it up when you build. _NOTE: the `.sql` file can have any name_
 2. Copy the Magento media files found in `media/catalog` (on your web server hosting Magento) into `data/magento_media`
