@@ -5,7 +5,7 @@ Nos jodieron chicos, toca migrar de un ecommerce a otro...
 
 ## Tarea
 
-Tenemos que migrar de Drupal 7 a Magento 2, no mucho mas por ahora.
+Tenemos que migrar de Drupal 7 a Magento 2.
 
 
 ## Overview (en ingles xd)
