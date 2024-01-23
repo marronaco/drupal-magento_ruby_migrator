@@ -1,24 +1,14 @@
-# Tooling to migrate data from Magento 1.9 to Shopify
+# MARRONACO ANTOLOGICO!!
 
-What you're looking at is the result of my efforts to help [La Bicicletta](https://labicicletta.com) (a bike shop in Toronto, Canada) migrate their online store from Magento to Shopify.
+Nos jodieron chicos, toca migrar de un ecommerce a otro...
 
-Thanks to La Bicicletta for releasing this work as open source software! They are a great bunch of humans, giving back to their community by supporting causes like [Toronto Hustle](https://www.toronto-hustle.com/welcome-1). They also happen to run one of the finest bike shops in Toronto and online! Check them out:
 
-<br>
-<p align="center">
-  <a href="https://labicicletta.com">
-    <img height="52px" alt="La Bicicletta" src="https://snappities.s3.amazonaws.com/zcd003bl4xvc1vv9iri4.png">
-  </a>
-</p>
-<br>
+## Tarea
 
-## Background :bike:
+Tenemos que migrar de Drupal 7 a Magento 2, no mucho mas por ahora.
 
-Magento was not meeting the needs of the business anymore, the decision was made to move to Shopify. There was a lot of data in Magento, ideally it could be moved to Shopify with some form of automation. Over the course of about 40h of time I went from never having looked at a Magento database schema, to what you are looking at.
 
-This codebase is heavily tied to the requirements of this specific migration, but I think there is a lot to learn in here and apply to your own migration.
-
-## Layout / Overview :raised_hands:
+## Overview (en ingles xd)
 
 The overall workflow here is:
 
@@ -38,7 +28,8 @@ The directory structure should look something like this:
 
 ![](https://snappities.s3.amazonaws.com/7t3b20qrk128ubgds6ij.png)
 
-## Running the migrator :sparkles:
+
+## Como runnear el migrator (en ingles xd)!
 
 1. Put the required keys and stuff in `.env`
 2. Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
@@ -90,6 +81,3 @@ The workflow for using this is:
 - Run `bin/activator sync-activation-urls`, this will atomically generate activation URLs for each customer in `data/customers.csv`
 - Run `bin/activator export-customers-csv`, this will export a new CSV file the same as `bin/customers.csv` but with the addition of an Activation URL, you can then use this to send out a bulk email inviting inactive users to activate in Shopify. This is placed in `data/customers-with-activation-urls.csv`
 
-## Questions :thinking: / Ideas :scream:
-
-Open an [issue](https://github.com/heycarsten/labici-magento-shopify-migrator/issues/new) and I'll try to respond as quickly as I can :+1:
