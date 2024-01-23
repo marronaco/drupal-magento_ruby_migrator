@@ -10,6 +10,6 @@ services:
   app:
     build: .
     volumes:
-      - .:/labici
+      - .:/test_drupal
     depends_on:
       - db
