@@ -1,2 +1,2 @@
 #!/bin/sh
-bundle exec pry -Ilib -r labici
+bundle exec pry -Ilib -r test_drupal
